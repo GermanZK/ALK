@@ -1,1 +1,35 @@
-Online drinks store project.
+# ALK
+
+Стартовый каркас проекта ALK на Next.js с TypeScript и Prisma.
+
+## Требования
+
+- Node.js 18+
+- npm
+
+## Установка
+
+```bash
+npm install
+```
+
+## Настройка окружения
+
+Скопируйте пример переменных окружения:
+
+```bash
+cp .env.example .env
+```
+
+## Запуск
+
+```bash
+npm run dev
+```
+
+Откройте [http://localhost:3000](http://localhost:3000) в браузере.
+
+## Prisma
+
+Подключена базовая конфигурация Prisma без реальной базы данных. Для будущего
+подключения используйте переменную `DATABASE_URL` в файле `.env`.
