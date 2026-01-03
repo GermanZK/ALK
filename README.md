@@ -4,32 +4,28 @@
 
 ## Требования
 
-- Node.js 18+
-- npm
+- Docker
+- Docker Compose
 
-## Установка
-
-```bash
-npm install
-```
-
-## Настройка окружения
-
-Скопируйте пример переменных окружения:
+## Запуск через docker-compose
 
 ```bash
-cp .env.example .env
-```
-
-## Запуск
-
-```bash
-npm run dev
+docker-compose up --build
 ```
 
 Откройте [http://localhost:3000](http://localhost:3000) в браузере.
 
-## Prisma
+## Prisma (миграции и сид)
 
-Подключена базовая конфигурация Prisma без реальной базы данных. Для будущего
-подключения используйте переменную `DATABASE_URL` в файле `.env`.
+После поднятия контейнеров выполните миграции и сид:
+
+```bash
+docker-compose exec web npx prisma migrate deploy
+docker-compose exec web npx prisma db seed
+```
+
+Для разработки можно использовать `migrate dev`:
+
+```bash
+docker-compose exec web npx prisma migrate dev
+```
