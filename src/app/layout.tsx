@@ -3,8 +3,8 @@ import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "ALK — каталог товаров",
-  description: "Базовый каркас проекта ALK на Next.js, TypeScript и Prisma.",
+  title: "ALK — product catalog",
+  description: "Base scaffold for the ALK project in Next.js and TypeScript.",
 };
 
 export default function RootLayout({
@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ru">
+    <html lang="en">
       <body>
         <div className="layout">
           <header className="site-header">
@@ -22,8 +22,8 @@ export default function RootLayout({
                 ALK
               </Link>
               <nav className="nav">
-                <Link href="/">Главная</Link>
-                <Link href="/catalog">Каталог</Link>
+                <Link href="/">Home</Link>
+                <Link href="/catalog">Catalog</Link>
               </nav>
             </div>
           </header>

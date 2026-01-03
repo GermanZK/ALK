@@ -5,25 +5,25 @@ export default function Home() {
   return (
     <div className={styles.hero}>
       <section>
-        <h1>ALK — стартовый каркас каталога</h1>
+        <h1>ALK — catalog starter kit</h1>
         <p>
-          Проект подготовлен на Next.js с TypeScript и Prisma. Здесь будет
-          располагаться витрина каталога и дальнейшая логика работы с данными.
+          The project is prepared with Next.js and TypeScript. This area will
+          host the catalog showcase and future data-driven functionality.
         </p>
         <div className={styles.heroActions}>
           <Link className={styles.primary} href="/catalog">
-            Открыть каталог
+            Open catalog
           </Link>
           <Link className={styles.secondary} href="#about">
-            Узнать больше
+            Learn more
           </Link>
         </div>
       </section>
       <section id="about">
-        <h2>Что дальше</h2>
+        <h2>What comes next</h2>
         <p>
-          Следующие шаги — добавить модели Prisma, подключить базу данных и
-          наполнить каталог карточками товаров.
+          The next steps include enriching the catalog with product cards and
+          connecting real data sources.
         </p>
       </section>
     </div>
